@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-LABEL maintainer="JuliBCN <julibcn@gmail.com>"
+LABEL maintainer="Iron <davohg@gmail.com>"
 
 # Install Dependencies
 ENV TZ=Europe/Dublin
