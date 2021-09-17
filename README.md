@@ -1,40 +1,26 @@
-# outrun-docker
-Outrun Game - Docker App (2021)
+# Docker App for Get SH>IT Done!
 
+Get SH>IT Done Carrousel - Docker App (2021)
 
-## Install Docker on Amazon Linux 2
-> sudo yum update -y
+## Connect repository to GitPod
+Add the prefix "https://gitpod.io#" to the URL of the repo.
 
-> sudo amazon-linux-extras install -y docker
+Once connected, run commands:
+> sudo apt-get update
 
-> sudo service docker start
+> sudo apt-get upgrade -y
 
-> sudo usermod -a -G docker ec2-user
+> docker version
 
-> sudo systemctl enable docker
+> git version
 
-> docker info
-
-
-
-## Download the code and Build the container
-> sudo yum install -y git
-
-> git clone https://github.com/Juli-BCN/outrun.git
-
-> cd outrun
-
-> docker build -t outrun .
+## Create and run the container
+> docker build -t get-shite .
 
 > docker images
 
-
-
-## Run, Test & Stop the Docker container
-> docker run -d -p 80:80 outrun
-
-> curl -L http://localhost
+> docker run -d -p44444:80 get-shite
 
 > docker ps
 
-> :eyeglasses: docker stop *CONTAINER_ID*
+> docker stop CONTAINER_ID
